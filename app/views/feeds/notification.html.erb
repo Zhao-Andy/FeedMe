@@ -1,0 +1,11 @@
+<div class="page-header"><h1>Your notification feed</h1></div>
+
+<%# for activity in @activities %>
+  <%# render_activity activity %>
+<%# end %>
+
+<% for group in @activities %>
+  <% for activity in group %>
+    <%= render_activity activity %>
+  <% end %>
+<% end %>
